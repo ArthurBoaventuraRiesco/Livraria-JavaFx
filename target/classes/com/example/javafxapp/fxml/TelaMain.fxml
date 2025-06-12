@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.javafxapp.controller.TelaMainController"
+            prefWidth="800" prefHeight="600">
+
+    <VBox spacing="10">
+        <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+        </padding>
+        <Label text="Painel de Usuários" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+        <TableView fx:id="tabelaUsuarios">
+            <columns>
+                <TableColumn fx:id="colunaId" text="ID" prefWidth="100"/>
+                <TableColumn fx:id="colunaNome" text="Nome" prefWidth="250"/>
+                <TableColumn fx:id="colunaEmail" text="Email" prefWidth="250"/>
+            </columns>
+        </TableView>
+        <HBox spacing="10">
+            <TextField fx:id="campoNome" promptText="Nome"/>
+            <TextField fx:id="campoEmail" promptText="Email"/>
+        </HBox>
+        <HBox spacing="10">
+            <Button text="Salvar" onAction="#salvarUsuario"/>
+            <Button text="Atualizar" onAction="#atualizarUsuario"/>
+            <Button text="Excluir" onAction="#deletarUsuario"/>
+            <Button text="Recarregar" onAction="#carregarUsuarios"/>
+        </HBox>
+    </VBox>
+
+</AnchorPane>
