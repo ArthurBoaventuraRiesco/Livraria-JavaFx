@@ -1,4 +1,12 @@
 # Livraria-JavaFx
+Trabalho realizado por: 
+
+Arthur Boaventura Riesco.
+
+Gabriel da Silva Coelho.
+
+Frederico Kunert.
+
 Aplicativo JavaFX que consome uma **API RESTful Spring Boot** criada no **Trabalho 1**, realizando operações de CRUD sobre usuários.
 
 O Trabalho 1 (API RESTful) foi executado no Spring Tool Suite (STS), enquanto o Trabalho 2 (aplicativo JavaFX) foi desenvolvido e executado no IntelliJ IDEA.
